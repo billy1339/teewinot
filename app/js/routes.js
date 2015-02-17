@@ -10,6 +10,9 @@ angular.module('Teewinot').config(function($routeProvider) {
     .when('/teewinot-blog', {
       templateUrl: 'app/templates/blog.html',
     })
+    .when('/about', {
+      templateUrl: 'app/templates/about.html'
+    })
     .otherwise({
       redirectTo: '/'
     });
