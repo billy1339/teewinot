@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Teewinot</title>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <!--<script src="bower_components/angular-deferred-bootstrap/angular-deferred-bootstrap.js"></script> -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+</head>
+
+<body ng-app="Teewinot">
+<ng-include src="'app/templates/partials/navbar.html'"></ng-include>
+
+<ng-view></ng-view>
+<!-- angular module defintion and reoutes -->
+<script src="app/js/app.js"></script>
+<script src="app/js/routes.js"></script>
+</body>
+</html>
