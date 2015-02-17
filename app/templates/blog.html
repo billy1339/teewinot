@@ -1,3 +1,53 @@
-<div class='container'>
-  <h1> Teewinot Blgo</h1>
+<div ng-controller='BlgoCtrl'>
+  <div class='container'>
+    <h1> Teewinot Blgo</h1>
+    <div class="row">
+      <div class='col-md-12'>
+        <form role='form' name='blgoPost' novalidate>
+          <div class='form-group'>
+          <label for='blgoTitle'>Title</label>
+          <input name='title' ng-model='title' type="title" class='form-control' placeholder='Technologies of the Future' required><br>
+          <label for='blgoContent'>Content</label>
+          <textarea name='content' ng-model='content' rows='8' type="content" class='form-control' placeholder='The technical innovations of the future will be diverse and impactful on the individual......' required></textarea><br>
+          <label for='blgoPassCode'>PassCode</label>
+          <input name='passcode' ng-model='passcode' type="passcode" class='form-control' placeholder='&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;' required><br>
+          <button type="submit" class='btn btn-primary' ng-disabled="blgoPost.$invalid">Submit Post</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
