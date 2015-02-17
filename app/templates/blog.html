@@ -7,7 +7,9 @@
         <div class='col-md-12'>
           <h3 class='postTitle'> {{post.title}} </h3>
           <h6 class='postAuthor'> Written By: {{post.author}} </h6>
-          <p class='postConent'> {{post.body}} </p>
+          <p class='postConent'> {{post.body}} </p><br>
+          <h4> Comments: </h4>
+          <p ng-repeat="comment in post.comments"> {{comment.content}} </p>
         </div>
       </div>
     </div>
@@ -17,12 +19,14 @@
         <form role='form' name='blgoPost' novalidate>
           <div class='form-group'>
           <label for='blgoTitle'>Title</label>
-          <input name='title' ng-model='title' type="title" class='form-control' placeholder='Technologies of the Future' required><br>
+          <input name='title' ng-model='post.title' type="title" class='form-control' placeholder='Technologies of the Future' required><br>
+          <label for='blgoAuthor'>Author</label>
+          <input name='author' ng-model='post.author' type="title" class='form-control' placeholder='Steve Jobs' required><br>
           <label for='blgoContent'>Content</label>
-          <textarea name='content' ng-model='content' rows='8' type="content" class='form-control' placeholder='The technical innovations of the future will be diverse and impactful on the individual......' required></textarea><br>
+          <textarea name='content' ng-model='post.content' rows='8' type="content" class='form-control' placeholder='The technical innovations of the future will be diverse and impactful on the individual......' required></textarea><br>
           <label for='blgoPassCode'>PassCode</label>
-          <input name='passcode' ng-model='passcode' type="passcode" class='form-control' placeholder='&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;' required><br>
-          <button type="submit" class='btn btn-primary' ng-disabled="blgoPost.$invalid">Submit Post</button>
+          <input name='passcode' ng-model='post.passcode' type="passcode" class='form-control' placeholder='&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;' required><br>
+          <button ng-click='createPost(post)' type="submit" class='btn btn-primary' ng-disabled="blgoPost.$invalid">Submit Post</button>
           </div>
         </form>
       </div>
