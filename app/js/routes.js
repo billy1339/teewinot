@@ -13,6 +13,9 @@ angular.module('Teewinot').config(function($routeProvider) {
     .when('/about', {
       templateUrl: 'app/templates/about.html'
     })
+    .when('/portfolio-companies', {
+      templateUrl: 'app/templates/portfolio.html'
+    })
     .otherwise({
       redirectTo: '/'
     });
