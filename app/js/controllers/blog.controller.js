@@ -1,6 +1,8 @@
 angular.module('Teewinot').controller('BlgoCtrl', function($scope, $http, PostFactory) {
   'use strict'
 
+  //add a class to each post with unique id of its title, so that you could search through the posts by article
+
   var promise, clearForm, updateView;
 
   promise = PostFactory.fetch();

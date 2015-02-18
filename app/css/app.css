@@ -1,3 +1,7 @@
+* {
+  font-family: Enriqueta;
+}
+
 #password {
   -webkit-text-security: square;
 }
@@ -6,3 +10,9 @@
 .whitespace{
   white-space: pre-wrap;
 }
+
+.navbar-brand {
+  padding-left: 2.5px;
+}
+
+
