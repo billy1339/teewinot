@@ -4,7 +4,7 @@ angular.module('Teewinot').factory('PostFactory', function($http, $q) {
   var fetch = function() {
     var deferred, posts;
     deferred = $q.defer();
-    $http.get('http://localhost:3000/posts')
+    $http.get('https://aqueous-mesa-3317.herokuapp.com/posts')
       .success(function(response) {
         posts = [];
         angular.copy(response, posts);

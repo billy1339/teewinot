@@ -20,7 +20,7 @@ angular.module('Teewinot').controller('BlgoCtrl', function($scope, $http, PostFa
   $scope.createPost = function(data) {
     var params;
     params = {post: data};
-    $http.post('http://localhost:3000/posts', params).success(function(response) {
+    $http.post('https://aqueous-mesa-3317.herokuapp.com/posts', params).success(function(response) {
       clearForm();
       updateView(response);
     }).error(function() {
