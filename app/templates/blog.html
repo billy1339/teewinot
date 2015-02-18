@@ -2,7 +2,7 @@
   <div class='container'>
     <h1> Teewinot Blgo</h1>
 
-    <div ng-repeat="post in posts">
+    <div ng-repeat="post in posts | orderBy:post.timestamp:true">
       <div class='row'>
         <div class='col-md-12'>
           <h3 class='postTitle'> {{post.title}} </h3>
@@ -23,7 +23,7 @@
           <label for='blgoAuthor'>Author</label>
           <input name='author' ng-model='post.author' type="title" class='form-control' placeholder='Steve Jobs' required><br>
           <label for='blgoContent'>Content</label>
-          <textarea name='content' ng-model='post.content' rows='8' type="content" class='form-control' placeholder='The technical innovations of the future will be diverse and impactful on the individual......' required></textarea><br>
+          <textarea name='content' ng-model='post.body' rows='8' type="content" class='form-control' placeholder='The technical innovations of the future will be diverse and impactful on the individual......' required></textarea><br>
           <label for='blgoPassCode'>PassCode</label>
           <input name='passcode' ng-model='post.passcode' type="passcode" class='form-control' placeholder='&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;' required><br>
           <button ng-click='createPost(post)' type="submit" class='btn btn-primary' ng-disabled="blgoPost.$invalid">Submit Post</button>
