@@ -7,7 +7,7 @@
         <div class='col-md-12'>
           <h3 class='postTitle'> {{post.title}} </h3>
           <h6 class='postAuthor'> Written By: {{post.author}} </h6>
-          <p class='postConent'> {{post.body}} </p><br>
+          <p class='whitespace' class='postConent'> {{post.body}} </p><br>
           <h4> Comments: </h4>
           <p ng-repeat="comment in post.comments"> {{comment.content}} </p>
         </div>
@@ -25,7 +25,7 @@
           <label for='blgoContent'>Content</label>
           <textarea name='content' ng-model='post.body' rows='8' type="content" class='form-control' placeholder='The technical innovations of the future will be diverse and impactful on the individual......' required></textarea><br>
           <label for='blgoPassCode'>PassCode</label>
-          <input name='passcode' ng-model='post.passcode' type="passcode" class='form-control' placeholder='&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;' required><br>
+          <input id='password' name='passcode' ng-model='post.passcode' type="passcode" class='form-control' placeholder='&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;' required><br>
           <button ng-click='createPost(post)' type="submit" class='btn btn-primary' ng-disabled="blgoPost.$invalid">Submit Post</button>
           </div>
         </form>

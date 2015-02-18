@@ -15,19 +15,17 @@ angular.module('Teewinot').controller('BlgoCtrl', function($scope, $http, PostFa
 
   updateView = function(newPost) {
     $scope.posts.unshift(newPost);
-    // $scope.$apply();
-    debugger
   };
 
   $scope.createPost = function(data) {
     var params;
     params = {post: data};
-    console.log(params.post);
     $http.post('http://localhost:3000/posts', params).success(function(response) {
-      console.log(response);
       clearForm();
       updateView(response);
-    })
+    }).error(function() {
+      alert("Please Enter the Correct Passcode. If you don't know the Passcode ask someone who does. If you don't know who to ask then you don't have the privlage to post.");
+    });
 
   }
 

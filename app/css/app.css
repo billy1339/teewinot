@@ -1,0 +1,8 @@
+#password {
+  -webkit-text-security: square;
+}
+
+
+.whitespace{
+  white-space: pre-wrap;
+}
