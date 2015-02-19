@@ -15,4 +15,24 @@
   padding-left: 2.5px;
 }
 
+#navbar {
+  background-color: rgb(18, 37, 64);
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: red;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: yellow;
+}
+.navbar-default .navbar-nav > li > a:active {
+  color: yellow;
+}
+
+#headerTitle {
+  /*color: black;*/
+}
+
+
+
 
