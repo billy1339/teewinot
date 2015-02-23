@@ -16,21 +16,20 @@
 }
 
 #navbar {
-  background-color: rgb(18, 37, 64);
+  background-color: rgb(24, 94, 178);
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: red;
+  color: rgb(255, 186, 50);
 }
-.navbar-default .navbar-nav > li > a:hover {
-  color: yellow;
-}
-.navbar-default .navbar-nav > li > a:active {
-  color: yellow;
+
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: white;
 }
 
 #headerTitle {
-  /*color: black;*/
+  color: rgb(255, 186, 50);
 }
 
 

@@ -7,11 +7,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
                 <a id='headerTitle' class="navbar-brand" ng-href="#/">Teewinot Ventures</a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
+                    <li ng-class="{ active: isActive('#/')}"><a class='navSubHeadings' ng-href="#/">Home</a></li>
                     <li ng-class="{ active: isActive('#/portfolio-companies')}"><a class='navSubHeadings' ng-href="#/portfolio-companies">Portfolio Companies</a></li>
                     <li ng-class="{ active: isActive('#/investment-philosophy')}"><a class='navSubHeadings' ng-href="#/investment-philosophy">Investment Philosophy</a></li>
                     <li ng-class="{ active: isActive('#/about')}"><a class='navSubHeadings' ng-href="#/about">About The Partners</a></li>
